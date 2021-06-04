@@ -5,5 +5,43 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Rock, Paper, Scissors</title>
   </head>
-  <body></body>
+  <body>
+<header>
+  <h1>Rock Paper Scissors </h1>
+</header>
+
+<!-- 
+-create a score board
+-span is inline whereas a div is a block element, since you need the score
+ alongside the badges we have to use an inline element.
+ id allows you to select just one element whereas class alows you to select multiple
+
+   -->
+
+<div class="score-board">
+  <div id="user-label" class="badge">user</div>
+  <div id="computer-label" class="badge">comp</div>
+  <span id="user-score">0</span>:<span id="computer-score">0</span>
+</div>
+
+<div class="result">
+  <p>Paper covers rock. You win!</p>
+</div>
+
+<div class="choices">
+  <div class="choice" id="p">
+    <img src="images/paper.png" alt="paper">
+  </div>
+  <div class="choice" id="r">
+    <img src="images/rock.png" alt="rock">
+  </div>
+  <div class="choice" id="s">
+    <img src="images/scissors.png" alt="Scissors">
+  </div>
+  </div>
+  <p id="action-message">Make your Move!</p>
+
+
+  <script src= "main.js" ></script>
+</body>
 </html>
